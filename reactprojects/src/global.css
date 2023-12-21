@@ -1,0 +1,637 @@
+/* admin sidebar */
+
+.container-fluid {
+  position: sticky;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #e9ecef;
+}
+
+.list-group-item a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.list-group-item a:hover {
+  color: #212529;
+}
+
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+/* Academy Manager Register */
+.academy-mgr-register{
+  width:54pc;
+}
+.academy-mgr-btn{
+  width: 26pc; 
+ 
+}
+/* view Academy Manager */
+/* ViewAcademyManager.css */
+
+#viewAcademyMgr {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card-body p {
+  margin-bottom: 5px;
+}
+
+.card-body span {
+  font-weight: bold;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+/* ViewAcademyEachManager*/
+
+.view-academy-each-manager {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.view-each-mgr-card {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ced4da;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.hover-overlay {
+  position: relative;
+}
+
+.hover-overlay .mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover-overlay:hover .mask {
+  opacity: 1;
+}
+
+/* Edit Academy Manager Register */
+.academy-manager-update{
+  width:54pc;
+}
+.edit-academy-mgr-btn{
+  width: 26pc;
+}
+/* AddAcademyName.css */
+
+.add-academy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.add-academy-form {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-academy-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #0069d9;
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.submit-button:active {
+  transform: translateY(1px);
+}
+
+/* View Academy */
+
+.view-head-academy {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tab-view-academy {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tab-view-academy th,
+.tab-view-academy td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-view-academy th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.tab-view-academy td {
+  vertical-align: middle;
+}
+
+.tab-view-academy p {
+  margin: 0;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: #0056b3;
+  text-decoration: underline;
+  outline: none;
+}
+
+.btn-link:active {
+  transform: translateY(1px);
+}
+
+.btn-sm {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+/* Edit Academy details */
+.edit-academy-details{
+  width: 40pc;
+}
+
+/* view Branch */
+.view-branch-head {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.view-branch-tab {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.view-branch-tab th,
+.view-branch-tab td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.view-branch-tab thead th {
+  background-color: #f2f2f2;
+}
+
+.view-branch-tab tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* edit branch */
+.edit-branch-head{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.edit-branch-body
+{
+  width: 40pc;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}  
+.bg-image{
+    height: 100vh;  
+}
+.welcomeText{
+    padding-top: 10pc;
+    font-family: sans-serif;
+    color:white;
+    font-weight: 900;
+}
+.nav-link{
+    color: blue;
+}
+.nav-text{
+    color: white !important;
+    font-size: 25px;
+}
+.nav-text-logo{
+    color: white;
+    font-size: 30px;
+}
+.navbar {
+    transition: background-color 0.3s ease-in-out; /* Add a transition effect for a smooth color change */
+  }
+  
+  .navbar.scrolled {
+    background-color: #f0f0f0; 
+   
+  }
+  .nav-scroll.scrolled .nav-item {
+    color: black !important; /* Change the color to your desired value */
+  }
+  
+#menu {
+    display: flex;
+   
+}
+
+.logoText{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+} 
+.loginIcon
+{
+    color:black;
+    border-radius: 20px;
+    
+}
+.signupIcon
+{
+    color:black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.navbar-login{
+    background-color: black;
+}
+.signUpSubmitBtn{
+    margin-top: 20px;
+   
+}
+.signUpSubmitBtn1{
+    width: 34pc;    
+}
+
+.logInSubmitBtn{
+    margin-top: 20px;
+    width: 23pc; 
+}
+
+.subNavImage{
+    height: 100px;
+    width: 100px;
+}
+.adminDashboardMenu{
+    color: white;
+    font-size: 30px;
+    align-content: center;
+}
+.admin-sidebar{
+    width: 20pc;
+}
+.admin-second-comp{
+    margin-left: 200px;
+}
+
+.signUpSubmitBtn2{
+    width: 24pc;    
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 18rem;
+    margin: 10px;
+  }
+  /* .bg-image{
+        height: 200px;
+  } */
+
+  .viewEachAcademyManagerImg{
+    height: 200px;
+  }
+
+  .view-academy-each-manager {
+    margin: 20px;
+  }
+  
+  .view-each-mgr-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-each-mgr-card .bg-image {
+    position: relative;
+  }
+  
+  .view-each-mgr-card .bg-image img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .view-each-mgr-card .bg-image .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 251, 251, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card .bg-image:hover .mask {
+    opacity: 1;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item {
+    padding: 5px;
+  }
+  
+  .btn-primary {
+    margin-right: 10px;
+  }
+  .viewEachAcademyManagerImg{
+    height: 200px;
+  }
+
+  .view-academy-each-manager {
+    margin: 20px;
+  }
+  
+  .view-each-mgr-card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-each-mgr-card .bg-image {
+    position: relative;
+  }
+  
+  .view-each-mgr-card .bg-image img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .view-each-mgr-card .bg-image .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 251, 251, 0.15);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .view-each-mgr-card .bg-image:hover .mask {
+    opacity: 1;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item {
+    padding: 5px;
+  }
+  
+  .btn-primary {
+    margin-right: 10px;
+  }
+  
+  .add-academy-container {
+    margin: 0 auto;
+  }
+  
+  .add-academy-form .form-control {
+    width:45pc;
+  }
+  
+  .add-academy-form .submit-button {
+    width: 100%;
+  }
+  
+  .viewAcaemy{
+    display: flex;
+  }
